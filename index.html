@@ -1,257 +1,91 @@
-Here is the upgraded code template with dedicated **Trading Proof & Strategy Screenshots** sections built right into the grid layout.
-
-### How to update your code:
-
-1. Open your `index.html` file on your computer using Notepad, replace everything inside it with the code below, and save the file.
-2. Go to your GitHub repository, click **Add file** -> **Upload files**, and upload both your updated `index.html` file **along with your screenshot image files** (make sure to name your image files simply, like `screenshot1.png` and `screenshot2.png`).
-3. Click **Commit changes**, and your website will instantly display your vision, mission, products, M-Pesa checkout, and your live trading screenshots!
-
-```html
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kingori Trading Hub | Professional Forex & Algorithmic Trading</title>
-    <style>
-        :root {
-            --bg-color: #0b0f19;
-            --card-bg: #131d31;
-            --accent-green: #00ecb9;
-            --text-main: #ffffff;
-            --text-muted: #94a3b8;
-            --border-color: #1e293b;
-        }
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            line-height: 1.6;
-        }
-        header {
-            background: linear-gradient(135deg, #0f172a, #1e293b);
-            padding: 40px 20px;
-            text-align: center;
-            border-bottom: 1px solid var(--border-color);
-        }
-        header h1 {
-            font-size: 2.5rem;
-            color: var(--accent-green);
-            margin-bottom: 10px;
-        }
-        header p {
-            color: var(--text-muted);
-            font-size: 1.1rem;
-        }
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        .mission-vision {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin-bottom: 50px;
-        }
-        .box {
-            background: var(--card-bg);
-            padding: 30px;
-            border-radius: 12px;
-            border: 1px solid var(--border-color);
-        }
-        .box h3 {
-            color: var(--accent-green);
-            margin-bottom: 15px;
-            font-size: 1.4rem;
-        }
-        section h2 {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 30px;
-        }
-        .products-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            margin-bottom: 50px;
-        }
-        .product-card {
-            background: var(--card-bg);
-            border-radius: 12px;
-            padding: 25px;
-            border: 1px solid var(--border-color);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        .product-card h4 {
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-        }
-        .product-card p {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-            margin-bottom: 20px;
-        }
-        .trading-screenshot {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 15px;
-            border: 1px solid var(--border-color);
-        }
-        .price {
-            font-size: 1.3rem;
-            font-weight: bold;
-            color: var(--accent-green);
-            margin-bottom: 15px;
-        }
-        .btn {
-            display: block;
-            text-align: center;
-            background-color: var(--accent-green);
-            color: #000;
-            padding: 12px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: opacity 0.2s;
-        }
-        .btn:hover {
-            opacity: 0.9;
-        }
-        .checkout-section {
-            background: var(--card-bg);
-            padding: 40px;
-            border-radius: 12px;
-            border: 1px solid var(--border-color);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        .checkout-section h3 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: var(--accent-green);
-        }
-        .form-group {
-            margin-bottom: 20px;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            color: var(--text-muted);
-        }
-        .form-group input, .form-group select {
-            width: 100%;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid var(--border-color);
-            background: #0b0f19;
-            color: #fff;
-        }
-        footer {
-            text-align: center;
-            padding: 30px;
-            color: var(--text-muted);
-            border-top: 1px solid var(--border-color);
-            margin-top: 50px;
-            font-size: 0.9rem;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>PHSP installer slideshow</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/styles.css">
+<style>
+html {
+		background-color: #fff;
+}
+* {box-sizing: border-box;}
+body {
+	margin:0px;}
+.mySlides {opacity: 0; position: absolute; transition: all 1s;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 445px;
+  position: relative;
+  margin: auto;
+  cursor: pointer;
+}
+
+/* Caption text */
+.text {
+  font-family: 'AdobeClean', Helvetica, Arial, sans-serif;
+  color: #fff;
+  font-weight: 450;
+  font-size: 15px;
+  letter-spacing: .3;
+  padding-left: 20px;
+  position: absolute;
+  bottom: 95px;
+  width: 30%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+	font-family: 'AdobeClean', Helvetica, Arial, sans-serif;
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .7}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .1}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
 </head>
 <body>
+<div class="slideshow-container" id="slideContainer" href="#">
 
-    <header>
-        <h1>Kingori Trading Hub</h1>
-        <p>Empowering Traders with Advanced Master Guides & Automated Strategies</p>
-    </header>
+<div class="mySlides fade" style="opacity: 1; visibility: visible;">
+    <img src="images/01_creativity_for_all_445x239.jpg" style="width:100%">
+    <div class="text" id="slideText1">Creativity for all.</div>
+</div>
 
-    <div class="container">
-        <!-- Vision & Mission -->
-        <div class="mission-vision">
-            <div class="box">
-                <h3>Our Vision</h3>
-                <p>To build a premier ecosystem of disciplined, profitable forex traders across the globe by merging institutional-grade strategies with automated execution tools.</p>
-            </div>
-            <div class="box">
-                <h3>Our Mission</h3>
-                <p>To simplify financial freedom by providing actionable educational resources, high-performance masterclasses, and reliable algorithmic trading bots designed for consistent market edge.</p>
-            </div>
-        </div>
+</div>
 
-        <!-- Products / Guides & Screenshots Section -->
-        <h2>Available Master Guides & Live Strategies</h2>
-        <div class="products-grid">
-            <div class="product-card">
-                <div>
-                    <!-- Replace 'screenshot1.png' with your actual uploaded image file name -->
-                    <img src="screenshot1.png" alt="Trading Analysis Screenshot" class="trading-screenshot" onerror="this.style.display='none'">
-                    <h4>KINGORI TRADING AI V1 Master Guide</h4>
-                    <p>Comprehensive manual detailing foundational frameworks and AI-assisted analysis.</p>
-                </div>
-                <div>
-                    <div class="price">Ksh 1,500</div>
-                    <a href="KINGORI_TRADING_AI_V1_Master_Guide.pdf" class="btn" download>Download PDF</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div>
-                    <!-- Replace 'screenshot2.png' with your actual uploaded image file name -->
-                    <img src="screenshot2.png" alt="Forex Masterclass Results" class="trading-screenshot" onerror="this.style.display='none'">
-                    <h4>Kingori Trading AI Forex Masterclass</h4>
-                    <p>Advanced institutional strategy covering risk management and price action.</p>
-                </div>
-                <div>
-                    <div class="price">Ksh 2,500</div>
-                    <a href="Kingori_Trading_AI_Forex_Masterclass.pdf" class="btn" download>Download PDF</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div>
-                    <!-- Replace 'screenshot3.png' with your actual uploaded image file name -->
-                    <img src="screenshot3.png" alt="MT5 Strategy Report" class="trading-screenshot" onerror="this.style.display='none'">
-                    <h4>MT5 Strategy Tester Report Guide</h4>
-                    <p>Step-by-step optimization manual and analytical metrics guide for backtests.</p>
-                </div>
-                <div>
-                    <div class="price">Ksh 1,000</div>
-                    <a href="MT5_Strategy_Tester_Report_Guide.pdf" class="btn" download>Download PDF</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Direct M-Pesa Checkout Section -->
-        <div class="checkout-section">
-            <h3>Instant M-Pesa Checkout</h3>
-            <form onsubmit="event.preventDefault(); alert('STK Push request simulated! Integrate your Daraja API callback to automate fulfillment.');">
-                <div class="form-group">
-                    <label for="product">Select Product / Package</label>
-                    <select id="product">
-                        <option>KINGORI TRADING AI V1 Master Guide - Ksh 1,500</option>
-                        <option>Kingori Trading AI Forex Masterclass - Ksh 2,500</option>
-                        <option>MT5 Strategy Tester Report Guide - Ksh 1,000</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="phone">M-Pesa Phone Number (Format: 07XXXXXXXX)</label>
-                    <input type="text" id="phone" placeholder="0712345678" required>
-                </div>
-                <button type="submit" class="btn">Pay via M-Pesa STK Push</button>
-            </form>
-        </div>
-    </div>
-
-    <footer>
-        <p>&copy; 2026 Kingori Trading Hub. All rights reserved.</p>
-    </footer>
-
+<script type="text/javascript" src="lib/jquery.min.js"></script>
+<script type="text/javascript" src="carousel.js"></script>
 </body>
 </html>
