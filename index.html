@@ -3,107 +3,133 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PHSP Installer Slideshow</title>
-<link rel="stylesheet" href="css/styles.css">
+<title>Kingori Trading Hub</title>
 <style>
-  :root {
-    --bg-color: #ffffff;
-    --text-color: #ffffff;
-    --accent-gray: #717171;
-  }
-
-  html {
-    background-color: var(--bg-color);
-  }
-
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-    background-color: var(--bg-color);
-  }
-
-  /* Slideshow container */
-  .slideshow-container {
-    max-width: 445px;
-    position: relative;
-    margin: auto;
-    overflow: hidden;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-
-  .mySlides {
-    display: none;
-    position: relative;
-    width: 100%;
-    opacity: 0;
-    transition: opacity 0.8s ease-in-out;
-  }
-
-  .mySlides.active-slide {
-    display: block;
-    opacity: 1;
-  }
-
-  .mySlides img {
-    width: 100%;
-    height: auto;
-    vertical-align: middle;
-    display: block;
-  }
-
-  /* Caption text */
-  .text {
-    font-family: 'AdobeClean', Helvetica, Arial, sans-serif;
-    color: var(--text-color);
-    font-weight: 500;
-    font-size: 15px;
-    letter-spacing: 0.3px;
-    padding: 10px 20px;
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    width: 100%;
-    text-align: left;
-    background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
-  }
-
-  /* Number text (1/3 etc) */
-  .numbertext {
-    font-family: 'AdobeClean', Helvetica, Arial, sans-serif;
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(0,0,0,0.4);
-    border-bottom-right-radius: 6px;
-  }
-
-  /* Responsive adjustments */
-  @media only screen and (max-width: 300px) {
-    .text {
-      font-size: 11px;
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
     }
-  }
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background-color: #0f172a;
+        color: #f8fafc;
+        line-height: 1.6;
+        padding: 20px;
+    }
+    .container {
+        max-width: 600px;
+        margin: 40px auto;
+    }
+    header {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    header img {
+        max-width: 120px;
+        margin-bottom: 15px;
+    }
+    header h1 {
+        font-size: 28px;
+        color: #38bdf8;
+        margin-bottom: 5px;
+    }
+    header p {
+        color: #94a3b8;
+        font-size: 15px;
+    }
+    .card {
+        background-color: #1e293b;
+        border-radius: 12px;
+        padding: 24px;
+        margin-bottom: 20px;
+        border: 1px solid #334155;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+    .card h3 {
+        color: #38bdf8;
+        margin-bottom: 12px;
+        font-size: 18px;
+    }
+    ul {
+        list-style: none;
+    }
+    li {
+        background-color: #0f172a;
+        padding: 15px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #334155;
+    }
+    .price {
+        font-weight: bold;
+        color: #4ade80;
+        font-size: 16px;
+    }
+    /* Floating WhatsApp Button */
+    .whatsapp-float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 25px;
+        right: 25px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease;
+    }
+    .whatsapp-float:hover {
+        transform: scale(1.1);
+    }
 </style>
 </head>
 <body>
 
-<div class="slideshow-container" id="slideContainer">
-  <div class="mySlides active-slide">
-    <div class="numbertext">1 / 1</div>
-    <img src="images/01_creativity_for_all_445x239.jpg" alt="Creativity for all">
-    <div class="text" id="slideText1">Creativity for all.</div>
-  </div>
+<div class="container">
+    <header>
+        <img src="logo.png" alt="Kingori Trading Hub Logo">
+        <h1>Kingori Trading Hub</h1>
+        <p>Professional Forex Guides & Strategies</p>
+    </header>
+
+    <!-- Vision & Mission -->
+    <div class="card">
+        <h3>Our Vision & Mission</h3>
+        <p style="margin-bottom: 10px;"><strong>Vision:</strong> To build a premier ecosystem of disciplined, profitable forex traders through institutional strategies and automation.</p>
+        <p><strong>Mission:</strong> To simplify financial freedom by providing actionable educational masterclasses and reliable tools for market edge.</p>
+    </div>
+
+    <!-- Guides List -->
+    <div class="card">
+        <h3>Available Master Guides</h3>
+        <ul>
+            <li>
+                <div>
+                    <strong>KINGORI TRADING AI V1 Master Guide</strong>
+                </div>
+                <div class="price">Ksh 1,500</div>
+            </li>
+        </ul>
+    </div>
 </div>
 
-<script type="text/javascript" src="lib/jquery.min.js"></script>
-<script type="text/javascript" src="carousel.js"></script>
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/254113693601?text=Hello%20Kingori%20Trading%20Hub,%20I%20need%20help%20with%20your%20guides." 
+   class="whatsapp-float" 
+   target="_blank" 
+   title="Chat with us on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 16 16">
+        <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.601 2.326zm-5.607 10.94h-.004c-1.306 0-2.588-.356-3.704-1.032l-.266-.156-2.222.584.593-2.161-.175-.273a6.598 6.598 0 0 1-1.01-3.55c.004-3.645 2.975-6.616 6.621-6.616a6.585 6.585 0 0 1 4.675 1.931 6.584 6.584 0 0 1 1.934 4.674c-.004 3.645-2.975 6.616-6.621 6.616zm3.806-4.935c-.208-.104-1.231-.608-1.421-.678-.19-.07-.329-.104-.468.104-.14.208-.54.678-.663.817-.123.14-.245.157-.453.052-.208-.104-.877-.323-1.674-1.035-.619-.55-1.036-1.218-1.159-1.426-.123-.208-.013-.322.091-.427.094-.094.208-.244.312-.365.104-.121.14-.208.208-.346.07-.139.035-.261-.018-.365-.053-.104-.468-1.127-.641-1.543-.169-.41-.341-.355-.468-.362-.12-.007-.26-.008-.4-.008s-.365.052-.555.262c-.19.21-.731.714-.731 1.74s.75 2.013.854 2.153c.104.14 1.478 2.255 3.583 3.16.5.216.89.345 1.194.443.5.159.955.137 1.314.083.4-.06 1.231-.503 1.403-.988.172-.485.172-.901.121-.988-.052-.087-.19-.14-.398-.244z"/>
+    </svg>
+</a>
+
 </body>
 </html>
