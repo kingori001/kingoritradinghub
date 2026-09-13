@@ -53,6 +53,9 @@
     }
     ul {
         list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
     li {
         background-color: #0f172a;
@@ -67,6 +70,8 @@
         font-weight: bold;
         color: #4ade80;
         font-size: 16px;
+        white-space: nowrap;
+        margin-left: 15px;
     }
     /* Floating WhatsApp Button */
     .whatsapp-float {
@@ -97,7 +102,7 @@
     <header>
         <img src="logo.png" alt="Kingori Trading Hub Logo">
         <h1>Kingori Trading Hub</h1>
-        <p>Professional Forex Guides & Strategies</p>
+        <p>Professional Forex Guides, Bots & Strategies</p>
     </header>
 
     <!-- Vision & Mission -->
@@ -119,10 +124,45 @@
             </li>
         </ul>
     </div>
+
+    <!-- Trading Bots Section -->
+    <div class="card">
+        <h3>Automated Trading Bots (EAs)</h3>
+        <ul>
+            <li>
+                <div>
+                    <strong>KINGORI TRADING AI V1 (MT5 Bot)</strong>
+                    <p style="color: #94a3b8; font-size: 13px; margin-top: 4px;">Automated execution, built-in risk management, and smart trend-following.</p>
+                </div>
+                <div class="price">Ksh 5,000</div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Trading Strategies Section -->
+    <div class="card">
+        <h3>Core Trading Strategies</h3>
+        <ul>
+            <li>
+                <div>
+                    <strong>Institutional Price Action Strategy</strong>
+                    <p style="color: #94a3b8; font-size: 13px;">Market structure, order blocks, and liquidity sweeps.</p>
+                </div>
+                <div class="price">Ksh 2,000</div>
+            </li>
+            <li>
+                <div>
+                    <strong>Scalping & Intraday Edge</strong>
+                    <p style="color: #94a3b8; font-size: 13px;">High-probability setups for London and New York sessions.</p>
+                </div>
+                <div class="price">Ksh 2,000</div>
+            </li>
+        </ul>
+    </div>
 </div>
 
 <!-- Floating WhatsApp Button -->
-<a href="https://wa.me/254113693601?text=Hello%20Kingori%20Trading%20Hub,%20I%20need%20help%20with%20your%20guides." 
+<a href="https://wa.me/254113693601?text=Hello%20Kingori%20Trading%20Hub,%20I%20am%20interested%20in%20your%20bots%20and%20strategies." 
    class="whatsapp-float" 
    target="_blank" 
    title="Chat with us on WhatsApp">
